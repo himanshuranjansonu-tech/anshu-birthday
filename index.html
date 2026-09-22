@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#2d1028">
+  <title>Happy Birthday, Sona ♡</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="app" aria-live="polite">
+    <section id="start" class="scene active" aria-labelledby="start-title">
+      <div class="stars" aria-hidden="true"></div>
+      <p class="eyebrow">25 September · 12:00 AM</p>
+      <div class="heart-orbit" aria-hidden="true">♥</div>
+      <h1 id="start-title">A little midnight surprise<br>for <em>my Sona</em> ♡</h1>
+      <p class="lead">Made with love, a few memories, and a wish for your happiest year yet.</p>
+      <button class="primary" data-go="cake">Open your surprise →</button>
+    </section>
+
+    <section id="cake" class="scene" aria-labelledby="cake-title">
+      <div class="stars" aria-hidden="true"></div>
+      <p class="eyebrow">A midnight surprise for you</p>
+      <h1 id="cake-title">Happy Birthday,<br><em>my Sona</em> ♡</h1>
+      <p class="lead">Close your eyes, make a wish, and tap the little flame.</p>
+      <button id="candle-button" class="cake" aria-label="Tap the candle to begin">
+        <span class="flame"></span><span class="wick"></span>
+        <span class="frosting"></span><span class="cake-layer layer-a"></span><span class="cake-layer layer-b"></span><span class="plate"></span>
+      </button>
+      <p id="candle-hint" class="hint">Tap the candle ✨</p>
+      <div id="birthday-reveal" class="birthday-reveal">
+        <p class="mini-heart">♡</p>
+        <h2>May your year be as beautiful as your heart.</h2>
+        <p>I hope this new chapter brings you soft mornings, big dreams, and countless reasons to smile.</p>
+        <button class="primary" data-go="balloons">One more surprise →</button>
+      </div>
+    </section>
+
+    <section id="balloons" class="scene" aria-labelledby="balloon-title">
+      <p class="eyebrow">A little truth from my heart</p>
+      <h2 id="balloon-title">Pop them in order</h2>
+      <div id="phrase" class="phrase" aria-live="polite"><span>YOU</span><span>ARE</span><span>MY</span><span>LIFE</span></div>
+      <p id="balloon-hint" class="hint">Start with balloon 1</p>
+      <div class="balloon-area">
+        <button class="balloon b1" data-word="0" aria-label="Balloon 1">1</button>
+        <button class="balloon b2" data-word="1" aria-label="Balloon 2">2</button>
+        <button class="balloon b3" data-word="2" aria-label="Balloon 3">3</button>
+        <button class="balloon b4" data-word="3" aria-label="Balloon 4">4</button>
+      </div>
+    </section>
+
+    <section id="memories" class="scene memories" aria-labelledby="memory-title">
+      <p class="eyebrow">Tap the photo to continue</p>
+      <h2 id="memory-title">Twelve little memories</h2>
+      <div class="memory-card">
+        <button id="memory-next" class="memory-tap" aria-label="Show the next photo"><img id="memory-image" src="assets/memory-01.JPG" alt="Memory 1 of 12"></button>
+        <span class="film-label">for my Sona ♡</span>
+      </div>
+      <div class="memory-controls">
+        <div><strong id="memory-count">1 / 9</strong><div class="progress"><span id="progress-bar"></span></div></div>
+      </div>
+      <p id="memory-caption" class="memory-caption">Memory 1 — tap the photo when you are ready.</p>
+    </section>
+
+    <section id="letter" class="scene letter-scene" aria-labelledby="letter-title">
+      <p class="eyebrow">A message from my heart</p>
+      <h2 id="letter-title">For you, always</h2>
+      <button id="envelope" class="envelope" aria-label="Open your birthday letter"><span class="flap"></span><span class="seal">♥</span></button>
+      <p id="envelope-hint" class="hint">Tap to open your letter</p>
+      <article id="letter-paper" class="letter-paper">
+        <p>Dear Sona, ❤️</p>
+        <p>Today, I don't want to count everything we've said or every little moment we've shared. I just want to celebrate <strong>you</strong> — the person whose smile, presence, and little ways have become so special to me.</p>
+        <p>I know that feelings don't have to arrive at the same speed. Some beautiful things take time to grow, and I never want you to feel rushed or pressured. I want our bond and our memories to grow naturally, one beautiful moment at a time. And somewhere in my heart, I have a little hope that one day, you will love me even more than I love you. ❤️</p>
+        <p>So, on your birthday, my wish for you is simple — <strong>never lose your beautiful smile, keep dreaming, stop overthinking, and keep becoming the person you want to be.</strong> May life always give you countless reasons to be happy, proud, and grateful.</p>
+        <p>And whenever you look at me, I hope you always find someone who is there for you — someone who will stand beside you, support you, listen to you, and share both the beautiful and difficult moments with you. ❤️</p>
+        <p>When you look at these pictures, I hope they bring back beautiful memories and remind you of just how beautiful you are — not only in these pictures, but in all the little moments that make you <em>you</em>. These are only a few memories we've made… there are still so many beautiful moments waiting for us. 🦋❤️</p>
+        <p class="signature">With all my love,<br><strong>Aapka Himanshu ❤️</strong></p>
+        <button id="memories-button" class="primary">Open our 12 memories →</button>
+      </article>
+    </section>
+
+    <section id="final" class="scene final" aria-labelledby="final-title">
+      <div class="stars" aria-hidden="true"></div>
+      <p class="eyebrow">The best part is still ahead</p>
+      <div class="heart-orbit" aria-hidden="true">♥</div>
+      <h2 id="final-title">Happy Birthday,<br><em>my Sona</em> ♡</h2>
+      <p>May every dream you carry find its way to you. And may our story always have more laughter, more warmth, and more beautiful memories to make.</p>
+      <p class="final-quote">“You are my favourite reason to believe in beautiful things.”</p>
+      <button id="replay" class="quiet-button">Replay our little surprise ↺</button>
+    </section>
+  </main>
+  <div id="confetti" aria-hidden="true"></div>
+  <audio id="song" preload="metadata" src="assets/birthday-song.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
