@@ -1,7 +1,7 @@
 const $ = (selector) => document.querySelector(selector);
 const scenes = [...document.querySelectorAll('.scene')];
 const song = $('#song');
-const photos = ['memory-01.JPG','memory-02.JPG','memory-03.JPG','memory-04.jpg','memory-05.jpg','memory-06.JPG','memory-07.jpg','memory-08.JPG','memory-09.jpg','memory-10.jpg','memory-11.jpg','memory-12.JPG'];
+const photos = ['memory-01.JPG','memory-02.JPG','memory-03.JPG','memory-04.jpg','memory-05.jpg','memory-06.jpg','memory-07.jpg','memory-08.jpg','memory-09.jpg','memory-10.jpg','memory-11.jpg','memory-12.JPG'];
 
 function showScene(id) {
   scenes.forEach((scene) => scene.classList.toggle('active', scene.id === id));
